@@ -1,2 +1,2 @@
 # PerformanceEngineering_repo
-A collection of performance engineering related algorithms, functions and helper functions.
+Algorithm implementations and helper functions. SIMD, OpenMP, MPI, ...
