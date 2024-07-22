@@ -5,7 +5,7 @@ int main(int argc, char** argv)
 	int N = 16, M = 8, S = 5;
 
 	float** a_data = (float**)malloc2Df(N, S);
-	float** b_data = (float**)malloc2Df(S, N);
+	float** b_data = (float**)malloc2Df(S, M);
 	float** c_data = (float**)malloc2Df(N, M);
 
 	float* a = a_data[0];
@@ -14,7 +14,7 @@ int main(int argc, char** argv)
 
 	for (int i = 0; i < N * S; ++i)
 		a[i] = 1.0f;
-	for (int i = 0; i < S * N; ++i)
+	for (int i = 0; i < S * M; ++i)
 		b[i] = 1.0f;
 
 	matrixMulF32_Iavx2(c, a, b, N, M, S);
