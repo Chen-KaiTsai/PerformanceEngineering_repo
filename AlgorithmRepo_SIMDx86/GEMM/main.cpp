@@ -20,7 +20,7 @@ int main(int argc, char** argv)
 	matrixMulF32_Iavx2(c, a, b, N, M, S);
 
 	for (int i = 0; i < N * M; ++i) {
-		if (i % N == 0) {
+		if (i % M == 0) {
 			puts("");
 		}
 		printf("%3.1f\t", c[i]);
